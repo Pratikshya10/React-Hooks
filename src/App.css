@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to bottom, grey , lightgray);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 15px 0;
+    height: 80px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.link {
+    font-size: 30px;
+    color: white;
+    font-style: oblique;
+    font-weight: 900;
+    text-decoration: none;
+    /* font-family: Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+.Home, .Contact {
+    height: 90vh;
+    text-align: center;
+    padding: 14%;
+    font-size: 100px;
+    color: black;
+}
+.mains{
+  margin: 30px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.Students {
+    margin: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.students-header h1 {
+    font-size: 40px;
+    color: aliceblue;
+}
+
+.one{
+  color: rgb(40, 39, 39);
+  font-style: italic;
+  font-weight: 600;
+}
+#students-btn {
+    background-color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 40px;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#students-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 70%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.input-container .input {
+    width: 25em;
+    margin: 50px 40px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+}
+
+.cancel-btn, .submit-btn {
+    margin: 20px;
+    padding: 10px 60px;
+    border: 1px solid black;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cancel-btn:hover {
+    background-color: black;
+    color: red;
+}
+
+.submit-btn:hover {
+    background-color: black;
+    color: white;
 }
